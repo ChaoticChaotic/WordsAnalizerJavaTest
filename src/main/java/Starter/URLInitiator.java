@@ -14,7 +14,6 @@ interface URLInitiator {
         System.out.println("Вставьте URL адрес");
         Start.setUrl(scanner.nextLine());
         initiateUrl();
-        LOGGER.info("Ввод Url");
     }
 
      static void initiateUrl() throws IllegalArgumentException {

@@ -17,8 +17,8 @@ public class Start implements ParsingInitiator,LangInitiator,URLInitiator {
 
 
     public static void start() {
-        LOGGER.info("Начало работы");
         while (isStarted) {
+            LOGGER.info("Начало работы");
             URLInitiator.getInput();
             LangInitiator.initiateLang();
             ParsingInitiator.initiateParsing();
